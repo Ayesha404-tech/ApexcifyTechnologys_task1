@@ -16,8 +16,8 @@ SENDER_PASSWORD = "rerf qyer qens vcas"  # Gmail App Password
 
 # List of 50+ predefined recipient emails for scalability testing
 RECIPIENTS = [
-    "ayeshashabbir053@gmail.com",
-    "ayesha.14366.ac@iqra.edu.pk",
+    "recipient3@example.com",
+    "recipient3@example.com",
     "recipient3@example.com",
     "recipient4@example.com",
     "recipient5@example.com",

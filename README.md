@@ -21,6 +21,7 @@ A powerful and flexible email automation system that allows you to send bulk ema
 - ⚡ **Rate Limiting**: Built-in delays to avoid Gmail rate limits
 - 🎯 **Flexible Configuration**: Easy to modify sender, subject, and body
 - 🔄 **Retry-Ready**: Can be extended with retry logic for failed emails
+- 🧪 **Testing Mode**: DRY_RUN flag for testing without sending actual emails
 
 ## 📋 Prerequisites
 
@@ -68,18 +69,20 @@ python send_emails.py
 
 ### Choose Sending Method
 
-When prompted, select:
-- **Option 1**: Bulk (Threaded) - Faster for 50+ recipients
-- **Option 2**: Sequential - More stable for smaller lists
+Use command-line arguments to select the method:
+- **Bulk (Threaded)**: `python send_emails.py --mode bulk --threads 15` (Faster for 50+ recipients)
+- **Sequential**: `python send_emails.py --mode sequential` (More stable for smaller lists)
 
-### For Bulk Method
+### Command Examples
 ```
-Select sending method:
-1. Bulk (Threaded) - Faster, up to 100+ recipients
-2. Sequential - Slower but more stable
+# Bulk sending with 15 threads
+python send_emails.py --mode bulk --threads 15
 
-Enter choice (1 or 2): 1
-Enter max concurrent threads (default 10): 15
+# Sequential sending
+python send_emails.py --mode sequential
+
+# Default bulk with 10 threads
+python send_emails.py
 ```
 
 ## 📊 Output Example
