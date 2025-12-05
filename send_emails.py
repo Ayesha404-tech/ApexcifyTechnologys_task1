@@ -8,7 +8,7 @@ from datetime import datetime
 import argparse
 
 # Dry run flag for testing (set to False for actual sending)
-DRY_RUN = False
+DRY_RUN = True
 
 # Sender credentials (Gmail with App Password)
 SENDER_EMAIL = "ayeshashabbir053@gmail.com"
